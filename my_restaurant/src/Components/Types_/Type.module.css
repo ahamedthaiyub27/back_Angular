@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.divie{
+    font-size: 20px;
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+   transition:all 0.3s ease-in-out  ;
+}
+.divie:hover{
+    color: white;
+    background-color: #2D2D2D;
+}
+
+.iconsfont{
+    font-size: 20px;
+}

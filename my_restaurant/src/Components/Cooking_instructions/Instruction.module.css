@@ -1,0 +1,128 @@
+/* Instruction.module.css */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f9f9f9 0%, #e8f5e9 100%);
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #ff5252;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.inputBox {
+  width: 100%;
+  max-width: 900px;
+  padding: 25px;
+  font-size: 1.1rem;
+  border: 2px solid #c8e6c9;
+  border-radius: 12px;
+  outline: none;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  background-color: white;
+  resize: vertical;
+  min-height: 150px;
+}
+
+.inputBox:focus {
+  border-color: #ff5252;
+  box-shadow: 0 4px 12px rgba(248, 41, 30, 0.2);
+}
+
+.description {
+  font-size: 1rem;
+  color: #616161;
+  text-align: center;
+  max-width: 500px;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.cancel {
+  background-color: #424242;
+  color: #fff;
+  padding: 16px 45px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cancel:hover {
+  background-color: #212121;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.20);
+}
+
+.addOrder {
+  background-color: #ff5252;
+  color: #fff;
+  padding: 16px 45px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.addOrder:hover {
+  background-color: #d32f2f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 30px 15px;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .inputBox {
+    padding: 20px;
+    min-height: 120px;
+  }
+  
+  .buttonContainer {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .cancel,
+  .addOrder {
+    width: 100%;
+  }
+}
